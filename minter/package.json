@@ -1,0 +1,11 @@
+{
+  "name": "ytdl-minter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun build index.ts --format=iife --target=browser --minify --outfile=../src/ytdl/assets/minter.js"
+  },
+  "dependencies": {
+    "bgutils-js": "^4.0.3"
+  }
+}

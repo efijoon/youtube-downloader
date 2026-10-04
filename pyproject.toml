@@ -1,0 +1,25 @@
+[project]
+name = "ytdl"
+version = "0.1.0"
+description = "YouTube 1080p downloader API backed by a logged-in patchright Chrome profile"
+readme = "README.md"
+authors = [
+    { name = "Erfan", email = "erfanpoorsina@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "bgutil-ytdlp-pot-provider>=2.0.1",
+    "fastapi>=0.142.2",
+    "patchright>=1.63.0",
+    "pydantic-settings>=2.15.0",
+    "typer>=0.27.2",
+    "uvicorn[standard]>=0.54.0",
+    "yt-dlp[default]>=2026.8.19",
+]
+
+[project.scripts]
+ytdl = "ytdl:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
